@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: frontend
-        image: tmdeshapriya/charity-frontend:14
+        image: tmdeshapriya/charity-frontend:16
         ports:
         - containerPort: 9002
 ---
