@@ -26,6 +26,8 @@ spec:
           value: "rootpassword"
         - name: SPRING_JPA_DATABASE_PLATFORM
           value: "org.hibernate.dialect.MySQLDialect"
+        - name: SERVER_SERVLET_CONTEXT_PATH
+          value: "/api"
 ---
 apiVersion: v1
 kind: Service
