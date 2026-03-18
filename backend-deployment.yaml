@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: backend
-        image: tmdeshapriya/charity-backend:latest
+        image: tmdeshapriya/charity-backend:11
         ports:
         - containerPort: 8080
         env:
