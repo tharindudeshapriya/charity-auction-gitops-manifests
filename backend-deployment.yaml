@@ -14,12 +14,18 @@ spec:
     spec:
       containers:
       - name: backend
-        image: tmdeshapriya/charity-backend:14
+        image: <DOCKER_USER>/charity-backend:latest
         ports:
         - containerPort: 8080
         env:
         - name: SPRING_DATASOURCE_URL
           value: jdbc:mysql://mysql:3306/charity_db
+        - name: SPRING_DATASOURCE_USERNAME
+          value: "root"
+        - name: SPRING_DATASOURCE_PASSWORD
+          value: "rootpassword"
+        - name: SPRING_JPA_DATABASE_PLATFORM
+          value: "org.hibernate.dialect.MySQL8Dialect"
 ---
 apiVersion: v1
 kind: Service
